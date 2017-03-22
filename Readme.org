@@ -23,8 +23,13 @@ Actuator allows you to monitor and manage the application.
 - Add ~schema.sql~ and ~data.sql~ to folder ~src/main/resources~
 - In ~application.properties~ set ~spring.jpa.hibernate.ddl-auto=none~
 - Now Hibernate will not automatically reset the database during loading.
-** Room entity
-#+INCLUDE: "./src/main/java/com/example/entity/Room.java" src java
+** Source files
+- Add data entity in ~src/main/java/com/example/entity/Room.java~
+- Add repository interface in ~src/main/java/com/example/repository/RoomRepository.java~
+- Add several endpoints for testing purpose in  ~src/main/java/com/example/controller/RoomController.java~
+** Try
+- Visit [[http://localhost:8080/room?number=P2]] to find the room with number "P2"
+- Visit [[http://localhost:8080/room]] to test the default parameter value
+- Visit [[http://localhost:8080/allrooms]] to find all rooms in the database
 
-** Room repository
-#+INCLUDE: "./src/main/java/com/example/repository/RoomRepository.java" src java
+
