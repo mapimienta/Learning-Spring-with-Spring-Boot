@@ -18,3 +18,8 @@ Actuator allows you to monitor and manage the application.
 - Run =com.example.DemoApplication.main()=, then the server is up. 
 - Visit [[http://localhost:8080/env]] to access environment information.
 
+* Data Access
+** Prepare
+- Add ~schema.sql~ and ~data.sql~ to folder ~src/main/resources~
+- In ~application.properties~ set ~spring.jpa.hibernate.ddl-auto=none~
+- Now Hibernate will not automatically reset the database during loading.
