@@ -1,0 +1,20 @@
+#+TITLE: Learning Spring with Spring Boot
+
+* About
+I followed the tutorial in the Lynda course "Learning Spring with Spring Boot". 
+
+* Initialization
+- Use the initializer to create a Spring project: [[https://start.spring.io/]] 
+- Switch to the full version in the initializer, select the following dependencies:
+  - Web / Web
+  - Template Engines / Thymeleaf
+  - SQL / JPA, H2
+  - Ops / Actuator
+- Download the generated project and open in IntelliJ
+
+** Play with Actuator 
+Actuator allows you to monitor and manage the application. 
+- In file =application.properties=, add line ~management.security.enabled=false~
+- Run =com.example.DemoApplication.main()=, then the server is up. 
+- Visit ~http://localhost:8080/env~ to access environment information.
+
